@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIPrecoUnico21", "APIPrecoUnico21\APIPrecoUnico21.csproj", "{63E9C73C-01E4-4BEC-A287-85982DCDE71B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E9C73C-01E4-4BEC-A287-85982DCDE71B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E9C73C-01E4-4BEC-A287-85982DCDE71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E9C73C-01E4-4BEC-A287-85982DCDE71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E9C73C-01E4-4BEC-A287-85982DCDE71B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBEF1CE1-C395-4121-B34E-3D114892F577}
+	EndGlobalSection
+EndGlobal

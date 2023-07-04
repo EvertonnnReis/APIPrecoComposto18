@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj": {}
+    "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj": {}
   },
   "projects": {
-    "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj": {
+    "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
+        "projectUniqueName": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
         "projectName": "APIPrecoComposto18",
-        "projectPath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
+        "projectPath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
         "packagesPath": "C:\\Users\\evertonreis\\.nuget\\packages\\",
-        "outputPath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\obj\\",
+        "outputPath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

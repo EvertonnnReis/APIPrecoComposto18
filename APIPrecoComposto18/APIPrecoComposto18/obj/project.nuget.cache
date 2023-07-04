@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ccahDiTKfCwkJaNkWsr6QM22+KREX1X/k6oJtUMDqA8XO/UFLoIsgff5CoImPifcn5NeP3zBZC3PTU+eBHpHfg==",
+  "dgSpecHash": "wsFhajHSprBHGFHfbQuVRcV9TNc7Q0HgUwSgn64Nh7N/7ZycWMlOQmk0YxQSXEiUl8CZk7oRNYpVTUz4fHqSfw==",
   "success": true,
-  "projectFilePath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
+  "projectFilePath": "C:\\CONNECT_PROJETOS\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18\\APIPrecoComposto18.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evertonreis\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\evertonreis\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -12,7 +12,7 @@ namespace APIPrecoComposto18.Services
         private readonly string _connectionString;
         private readonly string _urlDestino;
         private readonly string _authorization;
-
+        List<string> listaSku = new List<string>();
         public Services(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
@@ -142,6 +142,7 @@ namespace APIPrecoComposto18.Services
                             var corpoResposta = conteudo;
                             Console.WriteLine("Dados enviados para a API com sucesso!");
                             retornoApi = responseContent;
+                            await RegistraPrecificacoes(listaSku);
 
                         }
                         else
@@ -187,17 +188,27 @@ namespace APIPrecoComposto18.Services
                 // Transforma SKU no padrão ('SKU', 'sku')
                 string listaSkuFormatada = "'" + string.Join("','", listaSku.Select(sku => sku).ToList()) + "'";
 
-                // Atualiza os registros no banco de dados
-                using (var cmd = new System.Data.SqlClient.SqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandText = $"UPDATE Precificacoes " +
-                        $"SET DataEnvioAtualizacao = GETDATE() " +
-                        $"WHERE PRODUTOCODIGOEXTERNO IN ({listaSkuFormatada}) AND ProdutoListaPrecoCodigo = 18 " +
-                        $"AND DataConfirmacao >= '2023-06-21' ";
+            }
+        }
+        public async Task RegistraPrecificacoes(List<string> listaSku)
+        {
+            Console.WriteLine("Entriei no RegistraPrecificacoes");
+            string listaSkuFormatada = "'" + string.Join("','", listaSku.Select(sku => sku).ToList()) + "'";
+            Console.WriteLine("listasku: {0}", listaSkuFormatada);
+            using (var conn = new System.Data.SqlClient.SqlConnection(_connectionString)) 
+            { 
+            // Atualiza os registros no banco de dados
+            using (var cmd = new System.Data.SqlClient.SqlCommand())
+            {
+                await conn.OpenAsync();
+                cmd.Connection = conn;
+                cmd.CommandText = $"UPDATE Precificacoes " +
+                    $"SET DataEnvioAtualizacao = GETDATE() " +
+                    $"WHERE PRODUTOCODIGOEXTERNO IN ({listaSkuFormatada}) AND ProdutoListaPrecoCodigo = 18 " +
+                    $"AND DataConfirmacao >= '2023-06-21' ";
 
-                    await cmd.ExecuteNonQueryAsync();
-                }
+                await cmd.ExecuteNonQueryAsync();
+            }
             }
         }
     }
